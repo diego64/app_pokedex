@@ -14,6 +14,7 @@ export const Container = styled.View`
     background: ${theme.colors.background};
     flex: 1;
     position: relative;
+    padding: 20px;
   `}
 `;
 
