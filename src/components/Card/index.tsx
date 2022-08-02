@@ -32,13 +32,15 @@ export function Card({data, ...rest}: Props) {
         <S.ImageCardDetailLeftSide source={dotsImage} />
 
         <S.PokemonContentType>
-          {data.types.map(pokemonType => <S.PokemonType type={pokemonType.type.name}>
-            <S.PokemonTypeText key={pokemonType.type.name}>
-            {pokemonType.type.name}
-            </S.PokemonTypeText>
-          </S.PokemonType>)}
-            
-          </S.PokemonContentType>
+          {data.types.map(pokemonType => (
+            <S.PokemonType
+              key={pokemonType.type.name}
+              type={pokemonType.type.name}
+            >
+              <S.PokemonTypeText>{pokemonType.type.name}</S.PokemonTypeText>
+            </S.PokemonType>
+          ))}
+        </S.PokemonContentType>
       </S.LeftSide>
 
       <S.RightSide>
