@@ -22,7 +22,7 @@ export const Header = styled.ImageBackground`
   ${({ theme }) => css`
     width: ${windowWidth}px;
     margin-left: -20px;
-    height: 220px;
+    height: 180px;
     background: ${theme.colors.background};
   `}
 `;
